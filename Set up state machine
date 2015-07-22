@@ -1,0 +1,52 @@
+state table = 
+[struct('current_state',1,'max_input',2,'state_to_max_input',1,'
+table',[1,2;2,13]),%welcome and enter roll number make change 
+here
+struct('current_state',2,'max_input',3,'state_to_max_input',10,'
+table',[1,11;2,11;3,11])%enter branch
+struct('current_state',3,'max_input',10,'state_to_max_input',4,'
+table',[1,5;2,5;3,5;4,5;5,5;6,5;7,5;8,5;9,5;10,5]),%first digit 
+struct('current_state',4,'max_input',10,'state_to_max_input',4,'
+table',[1,5;2,5;3,5;4,5;5,5;6,5;7,5;8,5;9,5;10,5]),%first digit 
+incorrect
+struct('current_state',5,'max_input',10,'state_to_max_input',5,'
+table',[1,6;2,6;3,6;4,6;5,6;6,6;7,6;8,6;9,6;10,6]),%second digit
+struct('current_state',6,'max_input',10,'state_to_max_input',6,'
+table',[1,7;2,7;3,7;4,7;7,7;6,7;7,7;8,7;9,7;10,7]),%third digit
+struct('current_state',7,'max_input',2,'state_to_max_input',8,'t
+able',[1,9;2,9;3,9;4,9;5,9]),%attendance or marks
+struct('current_state',8,'max_input',2,'state_to_max_input',8,'t
+able',[1,9;2,9;3,9;4,9;5,9]),%attendance or marks
+struct('current_state',9,'max_input',2,'state_to_max_input',9,'t
+able',[1,9;2,9;3,9;4,9;5,9])%marks
+struct('current_state',10,'max_input',4,'state_to_max_input',11,
+'table',[1,11;2,11;3,11])%enter branch incorrect
+struct('current_state',11,'max_input',4,'state_to_max_input',12,
+'table',[1,3;2,3;3,3;4,3])%enter year
+struct('current_state',12,'max_input',4,'state_to_max_input',12,
+'table',[1,3;2,3;3,3;4,3])
+struct('current_state',13,'max_input',3,'state_to_max_input',14,
+'table',[1,15;2,15;3,15])
+struct('current_state',14,'max_input',3,'state_to_max_input',14,
+'table',[1,15;2,15;3,15])
+struct('current_state',15,'max_input',10,'state_to_max_input',15
+,'table',[1,17;2,17;3,17;4,17;5,17;6,17;7,17;8,17;9,17;10,17])%e
+nter course code
+struct('current_state',16,'max_input',10,'state_to_max_input',17
+,'table',[1,17;2,17;3,17;4,17;5,17;6,17;7,17;8,17;9,17;10,17])%e
+nter course code
+struct('current_state',17,'max_input',10,'state_to_max_input',17
+,'table',[1,18;2,18;3,18;4,18;5,18;6,18;7,18;8,18;9,18;10,18])%e
+nter course code
+struct('current_state',18,'max_input',2,'state_to_max_input',19,
+'table',[1,20;2,20;3,20;4,20])
+struct('current_state',19,'max_input',2,'state_to_max_input',19,
+'table',[1,20;2,20;3,20;4,20])
+struct('current_state',20,'max_input',2,'state_to_max_input',20,
+'table',[1,20;2,20;3,20;4,20])]
+State =1;
+roll_number= 0;
+faculty_or_student =0;
+current_year = 0;
+coursecode=0;
+branch =0;

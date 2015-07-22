@@ -1,0 +1,17 @@
+if(in~=11)
+if(in>statetable(state). max_input||in ==0)
+state = statetable(state). state_to_max_input;
+else
+state = statetable(state).table(in,2);
+end
+else
+state =1;
+roll_number =0;
+coursecode =0;
+faculty_or_student =0;
+current_year = 0;
+in =11;
+audio_out;
+branch =0;
+disp('new call or restart');
+end 

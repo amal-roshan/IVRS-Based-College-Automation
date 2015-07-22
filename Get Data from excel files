@@ -1,0 +1,9 @@
+%code for extracting all information regarding numeric data
+eeef_list = eeef.data.Sheet1;
+eeef_roll_max = max(eeef_list,[],1);
+eeef_roll_max = eeef_roll_max(1);
+%code for extracting all information regarding text data
+eeef_textinfo = char(eeef.textdata.Sheet1);
+[eeef_no_of_rows,eeef_no_of_colheaders] = 
+size(eeef.textdata.Sheet1);
+%same code repeated for eacg excel file

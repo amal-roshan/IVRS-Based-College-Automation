@@ -1,0 +1,38 @@
+In =11;
+prev =11;
+setup_text_to_speech_converter
+disp('speech converter ready');
+get_data
+disp('data ready');
+setup_state_machine
+[s] = setupSerial('COM7');
+audio_out 
+while(1)
+%gets input from serial port
+in1 = fscanf(s);
+in = str2num(in1)
+%in = input('enter input from serial');
+%code for exchanging 10 and 0
+if(in==12)
+in= prev;
+else
+prev = in;
+end
+if(size(in)~=0)%checks if there is any input string
+statechange;%changes state according to input
+if(in~=11)
+audio_out;%makes corresponding audio output
+end
+end
+end
+% DTMF CODES
+% 1 1
+% ....
+% 9 9
+% 10 0
+% 11 *
+% 12 #
+% 13 A
+% 14 B
+% 15 C
+% 0 D

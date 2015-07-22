@@ -1,0 +1,399 @@
+if(in==10)
+in=0;
+elseif(in==0)
+in= 10;
+end
+switch(state)
+case {1}
+speak.Speak('Welcome to National Institute of Technology 
+Interactive voice Response System');
+speak.Speak('Anytime you want to restart press star symbol and 
+if consequtive inputs are same press hash symbol');
+speak.Speak('Press 1 if you want to know student marks,Press 2 
+if you want to know course details');
+roll_number=0;
+current_year = 0;
+faculty_or_student =0;
+case {2}
+speak.Speak('You have chosen student marks');
+faculty_or_student =1;
+speak.Speak(' press 1 for electrical press 2 for electronics 
+press 3 for computer science ');
+case {3}
+current_year = in;
+switch( current_year)
+case {1}
+speak.Speak('You have chosen first year');
+case {2}
+speak.Speak('You have chosen second year');
+case {3}
+speak.Speak('You have chosen third year');
+case {4}
+speak.Speak('You have chosen fourth year');
+otherwise
+end
+speak.Speak(' please enter roll number');
+case {4}
+speak.Speak(' please enter roll number');
+case {5}
+roll_number =in; 
+disp(roll_number);
+case {6}
+roll_number =roll_number*10+in;
+disp(roll_number);
+case {7}
+roll_number =roll_number*10+in;
+disp(roll_number);
+switch(branch)
+case {1}
+switch(current_year)
+case {1}
+if(roll_number>eee1_roll_max)
+speak.Speak(' roll number incorrect Please enter 
+again');
+state = 4;
+roll_number = 0;
+else
+speak.Speak('entered roll number is');
+speak.Speak(num2str(eee1_list(roll_number,1)));
+speak.Speak('Name entered in marklist is');
+speak.Speak(eee1_textinfo(eee1_no_of_rows+roll_number+1,:));
+speak.Speak('press 1 for grade point average 
+two for attendance');
+end
+case {2}
+if(roll_number>eee2_roll_max)
+speak.Speak(' roll  number incorrect Please enter 
+again');
+state = 4;
+roll_number = 0;
+else
+speak.Speak('entered roll number is');
+speak.Speak(num2str(eee2_list(roll_number,1)));
+speak.Speak('Name entered in marklist is');
+speak.Speak(eee2_textinfo(eee2_no_of_rows+roll_number+1,:));
+speak.Speak('press 1 for grade point average 
+two for attendance');
+end
+case {3}
+if(roll_number>eee3_roll_max)
+speak.Speak(' roll number incorrect Please enter 
+again');
+state = 4;
+roll_number = 0;
+else
+speak.Speak('entered roll number is');
+speak.Speak(num2str(eee3_list(roll_number,1))); 
+speak.Speak('Name entered in marklist is');
+speak.Speak(eee3_textinfo(eee3_no_of_rows+roll_number+1,:));
+speak.Speak('press 1 for grade point average 
+two   for attendance');
+end
+case {4}
+if(roll_number>eee4_roll_max)
+speak.Speak(' roll number incorrect Please enter 
+again');
+state = 4;
+roll_number = 0;
+else
+speak.Speak('entered roll number is');
+speak.Speak(num2str(eee4_list(roll_number,1)));
+speak.Speak('Name entered in marklist is');
+speak.Speak(eee4_textinfo(eee4_no_of_rows+roll_number+1,:));
+speak.Speak('press 1 for grade point average 
+two for attendance');
+end
+otherwise
+end
+case {2}
+switch(current_year)
+case {1}
+if(roll_number>ece1_roll_max)
+speak.Speak(' roll number incorrect Please enter 
+again');
+state = 4;
+roll_number = 0;
+else
+speak.Speak('entered roll number is');
+speak.Speak(num2str(ece1_list(roll_number,1)));
+speak.Speak('Name entered in marklist is');
+speak.Speak(ece1_textinfo(ece1_no_of_rows+roll_number+1,:));
+speak.Speak('press 1 for grade point average 
+two for attendance');
+end
+case {2}
+if(roll_number>ece2_roll_max)
+speak.Speak('  roll number incorrect Please enter 
+again');
+state = 4;
+roll_number = 0;
+else
+speak.Speak('entered roll number is');
+speak.Speak(num2str(ece2_list(roll_number,1)));
+speak.Speak('Name entered in marklist is'); 
+speak.Speak(ece2_textinfo(ece2_no_of_rows+roll_number+1,:));
+speak.Speak('press 1 for grade point average 
+two for attendance');
+end
+case {3}
+if(roll_number>ece3_roll_max)
+speak.Speak(' roll number incorrect Please enter 
+again');
+state = 4;
+roll_number = 0;
+else
+speak.Speak('entered roll number is');
+speak.Speak(num2str(ece3_list(roll_number,1)));
+speak.Speak('Name entered in marklist is');
+speak.Speak(ece3_textinfo(ece3_no_of_rows+roll_number+1,:));
+speak.Speak('press 1 for   grade point average 
+two for attendance');
+end
+case {4}
+if(roll_number>ece4_roll_max)
+speak.Speak(' roll number incorrect Please enter 
+again');
+state = 4;
+roll_number = 0;
+else
+speak.Speak('entered roll number is');
+speak.Speak(num2str(ece4_list(roll_number,1)));
+speak.Speak('Name entered in marklist is');
+speak.Speak(ece4_textinfo(ece4_no_of_rows+roll_number+1,:));
+speak.Speak('press 1 for grade point average 
+two for attendance');
+end
+otherwise
+end
+case {3}
+switch(current_year)
+case {1}
+if(roll_number>cse1_roll_max)
+speak.Speak(' roll number incorrect Please enter 
+again');
+state = 4;
+roll_number = 0;
+else
+speak.Speak('entered roll number is');
+speak.Speak(num2str(cse1_list(roll_number,1)));
+speak.Speak('Name entered in marklist is');
+speak.Speak(cse1_textinfo(cse1_no_of_rows+roll_number+1,:)); 
+speak.Speak('press 1 for grade point average 
+two for attendance');
+end
+case {2}
+if(roll_number>cse2_roll_max)
+speak.Speak(' roll number incorrect Please enter 
+again');
+state = 4;
+roll_number = 0;
+else
+speak.Speak('entered roll number is');
+speak.Speak(num2str(cse2_list(roll_number,1)));
+speak.Speak('Name entered in marklist is');
+speak.Speak(cse2_textinfo(cse2_no_of_rows+roll_number+1,:));
+speak.Speak('press 1 for grade point average 
+two for attendance');
+end
+case {3}
+if(roll_number>cse3_roll_max)
+speak.Speak(' roll number incorrect Please enter 
+again');
+state = 4;
+roll_number = 0;
+else
+speak.Speak('entered roll number is');
+speak.Speak(num2str(cse3_list(roll_number,1)));
+speak.Speak('Name entered in marklist is');
+speak.Speak(cse3_textinfo(cse3_no_of_rows+roll_number+1,:));
+speak.Speak('press 1 for   grade point average 
+two for attendance');
+end
+case {4}
+if(roll_number>cse4_roll_max)
+speak.Speak(' roll number incorrect Please enter 
+again');
+state = 4;
+roll_number = 0;
+else
+speak.Speak('entered roll number is');
+speak.Speak(num2str(cse4_list(roll_number,1)));
+speak.Speak('Name entered in marklist is');
+speak.Speak(cse4_textinfo(cse4_no_of_rows+roll_number+1,:));
+speak.Speak('press 1 for grade point average 
+two for attendance');
+end
+otherwise
+end 
+otherwise
+end
+case {8}
+speak.Speak('press 1 for grade point average 
+two for attendance');
+case {9}%marks
+if(in == 1)
+speak.Speak('your grade point average is');
+else
+speak.Speak('your attendance is');
+end
+switch(branch)
+case{1}
+switch(current_year)
+case{1}
+text = num2str(eee1_list(roll_number,2+in));
+case{2}
+text = num2str(eee2_list(roll_number,2+in));
+case{3}
+text = num2str(eee3_list(roll_number,2+in));
+case{4}
+text = num2str(eee4_list(roll_number,2+in));
+otherwise
+end
+case {2}
+switch(current_year)
+case{1}
+text = num2str(ece1_list(roll_number,2+in));
+case{2}
+text = num2str(ece2_list(roll_number,2+in));
+case{3}
+text = num2str(ece3_list(roll_number,2+in));
+case{4}
+text = num2str(ece4_list(roll_number,2+in));
+otherwise
+end
+case {3}
+switch(current_year)
+case{1}
+text = num2str(cse1_list(roll_number,2+in));
+case{2}
+text = num2str(cse2_list(roll_number,2+in));
+case{3}
+text = num2str(cse3_list(roll_number,2+in));
+case{4}
+text = num2str(cse4_list(roll_number,2+in));
+otherwise 
+end
+otherwise
+end
+speak.Speak(text);
+speak.Speak('press 1 for grade point average two 
+for attendance or else press star symbol to restart');
+case{10}
+speak.Speak('Branch entered was incorrect press 1 for electrical 
+press 2 for electronics press 3 for computer science ');
+case{11}
+branch =in;
+switch(branch)
+case {1}
+speak.Speak('You have chosen electrical');
+case {2}
+speak.Speak('You have chosen electronics');
+case {3}
+speak.Speak('You have chosen computer science');
+otherwise
+end
+disp(branch);
+speak.Speak('Please enter your current year ');
+case{12}
+speak.Speak('Entered year is incorrect please enter again');
+case{13}
+speak.Speak('press 1 for electrical press 2 for electronics 
+press 3 for computer science ');
+case{14}
+speak.Speak('Branch entered was incorrect press 1 for electrical 
+press 2 for electronics press 3 for computer science ');
+case{15}
+branch = in;
+speak.Speak('Please enter the course code');
+case{16}
+case{17}
+if(in<10)
+coursecode =in
+end
+case{18}
+if(in<10)
+coursecode =coursecode*10+in
+end
+switch(branch)
+case{1}
+if(coursecode>eeef_roll_max)
+speak.Speak('course code entered was incorrect ');
+state =16; 
+else
+speak.Speak('entered course code was ');
+speak.Speak(num2str(eeef_list(coursecode,1)));
+speak.Speak('name of course entered was');
+speak.Speak(eeef_textinfo(eeef_no_of_rows+coursecode+1,:));
+speak.Speak('Press 1 to know faculty in charge else Press 2 to 
+know average marks in previous year');
+end
+case{2}
+if(coursecode>ecef_roll_max)
+speak.Speak('course code entered was incorrect ');
+state =16;
+else
+speak.Speak('entered course code was ');
+speak.Speak(num2str(ecef_list(coursecode,1)));
+speak.Speak('name of course entered was');
+speak.Speak(ecef_textinfo(ecef_no_of_rows+coursecode+1,:));
+speak.Speak('Press 1 to know faculty in charge else Press 2 to 
+know average marks in previous year');
+end
+case{3}
+if(coursecode>csef_roll_max)
+speak.Speak('course code entered was incorrect ');
+state =16;
+else
+speak.Speak('entered course code was ');
+speak.Speak(num2str(csef_list(coursecode,1)));
+speak.Speak('name of course entered was');
+speak.Speak(csef_textinfo(csef_no_of_rows+coursecode+1,:));
+speak.Speak('Press 1 to know faculty in charge else Press 2 to 
+know average marks in previous year');
+end
+otherwise
+end
+case{19}
+speak.Speak('Invalid input Press 1 to know faculty in charge 
+else Press 2 to know average marks in previous year');
+case{20}
+switch(branch)
+case{1}
+if(in==1)
+speak.Speak('faculty in charge is');
+speak.Speak(eeef_textinfo(2*eeef_no_of_rows+coursecode+1,:));
+elseif(in==2)
+speak.Speak('average marks in previous year');
+speak.Speak(num2str(eeef_list(coursecode,4)));
+end 
+speak.Speak('Press 1 to know faculty in charge else Press 2 to 
+know average marks in previous year');
+case{2}
+if(in==1)
+speak.Speak('faculty in charge is');
+speak.Speak(ecef_textinfo(2*ecef_no_of_rows+coursecode+1,:));
+elseif(in==2)
+speak.Speak('average marks in previous year');
+speak.Speak(num2str(ecef_list(coursecode,4)));
+end
+speak.Speak('Press 1 to know faculty in charge else Press 2 to 
+know average marks in previous year');
+case{3}
+if(in==1)
+speak.Speak('faculty in charge is');
+speak.Speak(csef_textinfo(2*csef_no_of_rows+coursecode+1,:));
+elseif(in==2)
+speak.Speak('average marks in previous year');
+speak.Speak(num2str(csef_list(coursecode,4)));
+end
+speak.Speak('Press 1 to know faculty in charge else Press 2 to 
+know average marks in previous year');
+otherwise
+end
+if(in~=1&&in~=2)
+speak.Speak('Press 1 to know faculty in charge else Press 2 to 
+know average marks in previous year');
+end
+speak.Speak('Or Press star symbol to restart');
+otherwise
+end
